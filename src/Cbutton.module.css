@@ -1,0 +1,39 @@
+.counterButtonBorder {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 3px solid #EEE6CE;
+    border-radius: 5px;
+    margin: 0 auto;
+    width: 350px;
+    height: 70px;
+}
+
+.counterButton {
+    width: 110px;
+    height: 40px;
+    background: #EEE6CE;
+    border: none;
+    border-radius: 10%;
+    font-size: 30px;
+    font-weight: 700;
+    color: #B8405E;
+    transition: 0.5s;
+}
+
+.counterButton:hover {
+    background: #FEECE9;
+    color: #FE7E6D;
+    transform: scale(1.1);
+}
+
+.counterButtonError {
+    width: 110px;
+    height: 40px;
+    background: #8f876f;
+    border: none;
+    border-radius: 10%;
+    font-size: 30px;
+    font-weight: 700;
+    color: #4c6062;
+}

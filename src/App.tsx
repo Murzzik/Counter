@@ -1,26 +1,31 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, {useState} from 'react';
+import s from './App.module.css';
+import CounterTable from "./CounterTable";
+import CounterButton from "./CounterButton";
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+    const [count, setCount] = useState<number>(0)
+
+    const increaseCount = () => {
+        if (count === 5) {
+            return
+        }
+        setCount(count + 1)
+    }
+    const resetCount = () => {
+        setCount(0)
+    }
+
+    return (
+        <div className={s.counterMain}>
+            <div className={s.counterBorder}>
+                <CounterTable count={count}/>
+                <CounterButton increaseCount={increaseCount} resetCount={resetCount} count={count}/>
+            </div>
+        </div>
+    );
 }
 
 export default App;

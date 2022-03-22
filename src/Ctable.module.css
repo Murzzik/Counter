@@ -1,0 +1,29 @@
+.counterTable {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #EEE6CE;
+    border-radius: 5px;
+    margin: 50px auto;
+    width: 350px;
+    height: 150px;
+    font-size: 100px;
+    font-weight: 700;
+    color: #9EDE73;
+    -webkit-text-stroke: 1px #000;
+}
+
+.counterTableError {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #EEE6CE;
+    border-radius: 5px;
+    margin: 50px auto;
+    width: 350px;
+    height: 150px;
+    font-size: 100px;
+    font-weight: 700;
+    color: #BE0000;
+    -webkit-text-stroke: 1px #000;
+}
